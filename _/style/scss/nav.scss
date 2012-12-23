@@ -7,6 +7,8 @@ nav {
 	display: block;
 	clear: both;
 	font-size: $base_font;
+	text-rendering: optimizeLegibility;
+	letter-spacing: 1px;
 
 	ul {
 		float: left;
@@ -43,7 +45,7 @@ nav {
 				display: inline-block;								/* Style Stuff */
 				padding: $btn_padding;								/* spacing of buttons */
 				color: $baseColorLighter;							/* link color */
-				letter-spacing:$font_kerning;						/* kerning */
+				text-shadow: $text-shadow;
 				word-wrap:break-word;								/* words spacing and new line for words */
 				text-transform: capitalize;							/* makes home => Home */	
 				&:hover, &:active {
@@ -111,8 +113,7 @@ nav ul li ul {
 			&:before {
 				content: "Navigation";
 				color: $baseColorLighter;
-				font-size: $base_font;
-				line-height: $base_font *2.5;
+				line-height: 54px;
 				text-indent: 70px;									/* location for the words Navigation */				
 				display: inline-block;
 				background: url(../../gen_images/arrow_down.svg) no-repeat 4%;
@@ -144,7 +145,6 @@ nav ul li ul {
 					margin-left: 92 - ($base * $golden); 
 					margin-top: $gld3;
 					width: $base - (92 - ($base * $golden));
-					background-color: darken($baseColorDark, 15%);
 					border-radius: $border_radius;
 					li { width: $base; }							/* lvl 2 text NO jump */
 				} /* ul:hover */
@@ -163,7 +163,7 @@ nav ul li ul {
 		height: 44px;
 		width: 44px;
 		position: relative;
-		top: 74px;
+		top: 64px;
 		float: right;
 		margin-right: 2%;
 		margin-top: -3em;

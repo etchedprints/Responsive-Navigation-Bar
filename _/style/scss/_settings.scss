@@ -38,13 +38,12 @@
 	$gld1:		$gld3 - $gld2;				/* 6-8px */
 /* -----------------------------  */
 /* Color Scheme */
-	$baseColor: 							gray; 	/* Base Color for Design */
+	$baseColor: 							#37485c; 	/* Base Color for Design */
 	
 	$baseColorLighter:						lighten($baseColor, $gld10);
 	$baseColorLight:						lighten($baseColor, $gld8);
 	$baseColorDark:							darken($baseColor, $gld5);
-	$baseColorDarker:						darken($baseColor, $gld7);
-
+	$baseColorDarker:						darken($baseColor, $gld6);
 
 /* $group Design Style */	
 
@@ -54,13 +53,13 @@
 	$serif: "Georgia", Times New Roman, Times, serif;	
 
 	$base_font:         					$base * ($golden * 2);
-	$font_kerning:							0.06em;
 
-	$drop_shadow: 		 					0.12em 0.19em 0.25em rgba(0,0,0,.25);
-	$box_shadow:							inset 0 0 0.75em darken($baseColor, 35%); /* +shadow to button */
+	$drop_shadow: 		 					0.12em 0.19em 0.25em $baseColorDarker;
+	$box_shadow:							inset 0 0 0.7em darken($baseColor, $gld7); /* +shadow to button */
+	$text-shadow: 							1px 2px 1px $baseColorDarker;
 	
-	$border_radius: 						0;
-	$div_line:								medium ridge lighten($baseColor, 10%);
+	$border_radius: 						0px;
+	$div_line:								medium ridge $baseColor;
 	
 	$btn_padding: 							0.69em 1em;
 	$navbar_indent: 						1em;						/* home btn indent */
