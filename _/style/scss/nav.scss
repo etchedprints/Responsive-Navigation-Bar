@@ -6,7 +6,7 @@ html { overflow: scroll; }
 nav {
 	display: block;
 	clear: both;
-	font-size: $base_font;
+	font-size: $base-font;
 	text-rendering: optimizeLegibility;
 	letter-spacing: 1px;
 
@@ -22,16 +22,16 @@ nav {
 		font-family: $sans;	
 		width: $base;												/* we always want our menu to fill the available space */
 		background: $baseColor;										/* style */
-		border-radius: $border_radius;								/* round the corners for all nav */
-		box-shadow: $drop_shadow;	
+		border-radius: $border-radius;								/* round the corners for all nav */
+		box-shadow: $drop-shadow;	
 
 		li {
 			float: left;
 			position: relative;										/* sets menu under link */
-			border-right: $div_line;								/* creates line & ridge between each button */
+			border-right: $div-line;								/* creates line & ridge between each button */
 			margin:0;												/* reset */
 			padding:0;												/* reset */
-			&:first-child { padding-left: $navbar_indent; } 		/* indept nav button items */
+			&:first-child { padding-left: $navbar-indent; } 		/* indept nav button items */
 			&:last-child { border-right: none; }					/* no line after last button */
 			&:hover ul {
 				top:99%;											/* IE7-8 - places dropdown under the top-lvl menu */
@@ -43,18 +43,18 @@ nav {
 			a {														/* unselected top-level menu items */
 				text-decoration:none;								/* NO underline */
 				display: inline-block;								/* Style Stuff */
-				padding: $btn_padding;								/* spacing of buttons */
+				padding: $btn-padding;								/* spacing of buttons */
 				color: $baseColorLighter;							/* link color */
 				text-shadow: $text-shadow;
 				word-wrap:break-word;								/* words spacing and new line for words */
 				text-transform: capitalize;							/* makes home => Home */	
 				&:hover, &:active {
-					-webkit-transition: $background_transition;		/* fades dark color with hover */
+					-webkit-transition: $background-transition;		/* fades dark color with hover */
 					background-color: $baseColorDarker;				/* IE7-8 - style */
 					color: $baseColorLighter;						/* color for hover state */
 					text-decoration:none;
 				} /* /a:hover */
-				&:active { box-shadow: $box_shadow; }
+				&:active { box-shadow: $box-shadow; }
 			} /* /a */			
 		} /*  /li */	
 	} /* /ul */
@@ -70,7 +70,7 @@ nav {
 #nav ul li ul,
 nav ul li ul {
 	display:none;													/* initially hide the entire list hierarchy */
-	width: $nav_lvl_2_width;										/* 2nd lvl link on one line */
+	width: $nav-lvl-two-width;										/* 2nd lvl link on one line */
 	z-index: 98;													/* at small sizes the menu stays on top	*/
 	background-color: $baseColorDark;							    /* nav dropdown color */
 	
@@ -81,11 +81,11 @@ nav ul li ul {
 		&:first-child { padding: 0; }								/* No indent for dropdown items */
 		&:hover {
 			width: 100%;											/* darker hover full width */
-			-webkit-transition: $background_transition;				/* fade in hover state */
+			-webkit-transition: $background-transition;				/* fade in hover state */
 			background: $baseColorDarker;		 					/* darker hover color */
 			z-index: 99;											/* at small sizes the menu stays on top */	
 		}
-		&:active { box-shadow: $box_shadow; }						/* button active design */
+		&:active { box-shadow: $box-shadow; }						/* button active design */
 		&:last-child {												/* Round the corners of last li in dropdown menu */
 			border-bottom-left-radius: $border_radius;
 			border-bottom-right-radius: $border_radius;
@@ -113,7 +113,7 @@ nav ul li ul {
 			&:before {
 				content: "Navigation";
 				color: $baseColorLighter;
-				line-height: 54px;
+				line-height: 58px;
 				text-indent: 70px;									/* location for the words Navigation */				
 				display: inline-block;
 				background: url(../../gen_images/arrow_down.svg) no-repeat 4%;
@@ -124,9 +124,9 @@ nav ul li ul {
 				margin-top: 0;
 				height: $base;	
 				max-height: 9999px;
-				-moz-transition: $display_transition;
-				-webkit-transition: $display_transition;
-				transition: $display_transition;	
+				-moz-transition: $display-transition;
+				-webkit-transition: $display-transition;
+				transition: $display-transition;	
 			} /* /ul:hover */
 			
 			li {	
@@ -145,7 +145,7 @@ nav ul li ul {
 					margin-left: 92 - ($base * $golden); 
 					margin-top: $gld3;
 					width: $base - (92 - ($base * $golden));
-					border-radius: $border_radius;
+					border-radius: $border-radius;
 					li { width: $base; }							/* lvl 2 text NO jump */
 				} /* ul:hover */
 			} /* /li*/
@@ -163,7 +163,7 @@ nav ul li ul {
 		height: 44px;
 		width: 44px;
 		position: relative;
-		top: 64px;
+		top: 66px;
 		float: right;
 		margin-right: 2%;
 		margin-top: -3em;

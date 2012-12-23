@@ -52,21 +52,21 @@
 	$sans:	"Myriad Web Pro", "Helvetica Neue", Helvetica, Lucida, Verdana, sans-serif;
 	$serif: "Georgia", Times New Roman, Times, serif;	
 
-	$base_font:         					$base * ($golden * 2);
+	$base-font:         					$base * ($golden * 2);
 
-	$drop_shadow: 		 					0.12em 0.19em 0.25em $baseColorDarker;
-	$box_shadow:							inset 0 0 0.7em darken($baseColor, $gld7); /* +shadow to button */
+	$drop-shadow: 		 					0.12em 0.19em 0.25em $baseColorDarker;
+	$box-shadow:							inset 0 0 0.7em darken($baseColor, $gld7); /* +shadow to button */
 	$text-shadow: 							1px 2px 1px $baseColorDarker;
 	
-	$border_radius: 						0px;
-	$div_line:								medium ridge $baseColor;
+	$border-radius: 						0px;
+	$div-line:								medium ridge $baseColor;
 	
-	$btn_padding: 							0.69em 1em;
-	$navbar_indent: 						1em;						/* home btn indent */
+	$btn-padding: 							0.69em 1em;
+	$navbar-indent: 						1em;						/* home btn indent */
 	
-	$nav_lvl_2_width: 						auto;
+	$nav-lvl-two-width:		 				auto;
 	
-	$background_transition: 				background 200ms ease-in 50ms;
-	$display_transition:					max-height 4000ms ease-in-out;
+	$background-transition: 				background 200ms ease-in 50ms;
+	$display-transition:					max-height 4000ms ease-in-out;
 
 /* $end */
