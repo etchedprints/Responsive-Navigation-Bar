@@ -1,8 +1,5 @@
 @import 'settings';
 
-
-
-
 /* $group TOP Nav */
 
 html {
@@ -18,58 +15,58 @@ nav {
 
 	ul {
 		float: left;
-		position: relative;											// sets menu under link
-		margin:0;													// reset
+		position: relative;											/* sets menu under link */
+		margin:0;													/* reset */
 		padding:0;
 		border:0;
 		list-style-type:none;
 		clear: both;
-		display: block;												// make a full button
+		display: block;												/* make a full button */
 		font-family: $sans;	
-		width: $base;												// we always want our menu to fill the available space 
-		background: $baseColor;										// style
-		border-radius: $border_radius;								// round the corners for all nav
+		width: $base;												/* we always want our menu to fill the available space */
+		background: $baseColor;										/* style */
+		border-radius: $border_radius;								/* round the corners for all nav */
 		box-shadow: $drop_shadow;	
 		
-		li:first-child { padding-left: $navbar_indent; } 			// indept nav button items
-		li:last-child { border-right: none; }						// no line after last button	
+		li:first-child { padding-left: $navbar_indent; } 			/* indept nav button items */
+		li:last-child { border-right: none; }						/* no line after last button */	
 		
 		li {
 			float: left;
-			position: relative;										// sets menu under link
-			border-right: $div_line;								// creates line & ridge between each button
-			margin:0;												// reset
-			padding:0;												// reset
+			position: relative;										/* sets menu under link */
+			border-right: $div_line;								/* creates line & ridge between each button */
+			margin:0;												/* reset */
+			padding:0;												/* reset */
 		
-			a {														// unselected top-level menu items 
-				text-decoration:none;								// NO underline	
-				display: inline-block;								// Style Stuff
-				padding: $btn_padding;								// spacing of buttons
-				color: $baseColorLighter;							// link color
-				letter-spacing:$font_kerning;						// kerning
-				word-wrap:break-word;								// words spacing and new line for words
-				text-transform: capitalize;							// makes home => Home
-			} // a
+			a {														/* unselected top-level menu items */
+				text-decoration:none;								/* NO underline */
+				display: inline-block;								/* Style Stuff */
+				padding: $btn_padding;								/* spacing of buttons */
+				color: $baseColorLighter;							/* link color */
+				letter-spacing:$font_kerning;						/* kerning */
+				word-wrap:break-word;								/* words spacing and new line for words */
+				text-transform: capitalize;							/* makes home => Home */
+			} /* /a */
 			
 			a:hover, a:active { 
-				-webkit-transition: $background_transition;			// fades dark color with hover
-				background-color: $baseColorDarker;					// IE7-8 - style
-				color: $baseColorLighter;							// color for hover state
+				-webkit-transition: $background_transition;			/* fades dark color with hover */
+				background-color: $baseColorDarker;					/* IE7-8 - style */
+				color: $baseColorLighter;							/* color for hover state */
 				text-decoration:none;
-			} // a:hover
+			} /* /a:hover */
 		
 			a:active { box-shadow: $box_shadow; }
 		
-		} // li
+		} /*  /li */
 		
 		li:hover ul {
-			top:99%;												// IE7-8 - places dropdown under the top-lvl menu */
-			left:0;													// IE7-8 - dropdown placement
-			display:block;											// makes the dropdown work
-			position:absolute;										// makes the dropdown work
-		} // li:hover
-	} // ul
-} // nav
+			top:99%;												/* IE7-8 - places dropdown under the top-lvl menu */
+			left:0;													/* IE7-8 - dropdown placement */
+			display:block;											/* makes the dropdown work */
+			position:absolute;										/* makes the dropdown work */
+		} /* /li:hover */
+	} /* /ul */
+} /* /nav */
 
 /* $end */
 
@@ -91,39 +88,37 @@ nav {
 
 #nav ul li ul,
 nav ul li ul {
-	display:none;													// initially hide the entire list hierarchy
-	width: $nav_lvl_2_width;										// 2nd lvl link on one line
-	z-index: 98;													// at small sizes the menu stays on top	
-	background-color: $baseColorDark;							// nav dropdown color
+	display:none;													/* initially hide the entire list hierarchy */
+	width: $nav_lvl_2_width;										/* 2nd lvl link on one line */
+	z-index: 98;													/* at small sizes the menu stays on top	*/
+	background-color: $baseColorDark;							    /* nav dropdown color */
 	
 	li {
-		width: inherit;												// 2nd lvl link is full width
-		border: none;												// no line & ride for 2nd lvl
-	
-		clear: both;												// nav links have own line
-		
+		width: inherit;												/* 2nd lvl link is full width */
+		border: none;												/* no line & ride for 2nd lvl */
+		clear: both;												/* nav links have own line */
 		a:hover, a:active { 
-			background: none;										// so you see only one color with rgba
-			box-shadow: none;										// no box-shadow around text also
-		} // a:hover	
-	} //li 
+			background: none;										/* so you see only one color with rgba */
+			box-shadow: none;										/* no box-shadow around text also */
+		} /* /a:hover */	
+	} /* /li */ 
 	
-	li:first-child { padding: 0; }									// No indent for dropdown items
+	li:first-child { padding: 0; }									/* No indent for dropdown items */
 	 
 	li:hover {
-		-webkit-transition: $background_transition;					// fade in hover state
-		background: $baseColorDarker;		 						// darker hover color
-		z-index: 99;												// at small sizes the menu stays on top
-		width: 100%;												// darker hover full width
+		-webkit-transition: $background_transition;					/* fade in hover state */
+		background: $baseColorDarker;		 						/* darker hover color */
+		z-index: 99;												/* at small sizes the menu stays on top */
+		width: 100%;												/* darker hover full width */
 	}
 	
-	li:active { box-shadow: $box_shadow; }							// button active design
+	li:active { box-shadow: $box_shadow; }							/* button active design */
 	
-	li:last-child {													// Round the corners of last li in dropdown menu
+	li:last-child {													/* Round the corners of last li in dropdown menu */
 		border-bottom-left-radius: $border_radius;
 		border-bottom-right-radius: $border_radius;
 	}	
-} // nav ul li ul
+} /* /nav ul li ul */
 /* $end */
 
 
@@ -152,11 +147,11 @@ nav ul li ul {
 			color: $baseColorLighter;
 			font-size: $base_font;
 			line-height: $base_font *2.5;
-			text-indent: 80px;										// location for the words Navigation				
+			text-indent: 70px;										/* location for the words Navigation */				
 			display: inline-block;
 			background: url(../../gen_images/arrow_down.png) no-repeat 4%;
 			z-index: 98;
-		} //ul:before
+		} /* /ul:before */
 		
 		ul {
 			li:first-child { padding-left: 0; }
@@ -173,22 +168,22 @@ nav ul li ul {
 				min-height: 0;
 				margin-top: -70px;
 				text-indent: -9999px;
-				border-right: none;										// No line on the right side
-				width: $base;											// makes buttons fill width	
+				border-right: none;										/* No line on the right side */
+				width: $base;											/* makes buttons fill width	*/
 				
 				a { display: block; }
-				ul:before { display: none; }							// hide title nav from 2nd lvl
+				ul:before { display: none; }							/* hide title nav from 2nd lvl */
 											
-			} // li
+			} /* /li*/
 		
 			li:hover ul {
-				top: 0;													// drop down placement	
+				top: 0;													/* drop down placement */
 				margin-left: 100 - ($base * $golden); 
 				margin-top: $gld3;
 				background-color: darken($baseColorDark, 15%);
 				border-radius: $border_radius;
 				
-			} // li:hover
+			} /* li:hover */
 			
 			&:hover li {
 				text-indent: 0;
@@ -198,25 +193,25 @@ nav ul li ul {
 				-moz-transition: $display_transition;
 				-webkit-transition: $display_transition;
 				transition: $display_transition;
-			} //ul:hover
+			} /* /ul:hover */
 	
-		} //ul
+		} /* /ul */
 			
-	} // nav
+	} /* /nav */
 	
 	.mobile_close {
 		content: "";
 		display: inline-block;
 		background: url(../../gen_images/arrow_up.png) no-repeat right;
-		height: 64px;
-		width: 64px;
+		height: 44px;
+		width: 44px;
 		position: relative;
-		top: 3.5em;
+		top: 74px;
 		float: right;
 		margin-right: 2%;
 		margin-top: -3em;
-		padding-left: $gld6;									// larger btn spot
+		padding-left: $gld6;									/* larger btn spot */
 		z-index: 99;
-	} // mobile_close
+	} /* mobile_close */
 	
-} // @media portrait
+} /* /@media portrait */

@@ -1,5 +1,6 @@
 /* $group title */
 
+/*
 // ==============================================================================
 //	Based on GRC multi-level script-free pure-CSS menuing system stylesheet.
 //	This code was placed into the public domain by its original author
@@ -10,6 +11,7 @@
 //	** Revised by Chad Lindemann for IE7+,Safari,Firefox,& Chrome.
 // ===============================================================================
 // Navigation Bar Design Style {Sass}
+*/
 
 /* $end */
 
@@ -20,11 +22,11 @@
 
 /* $group Styles */
 			
-//Golden Ratio 0.61803398874989
+/* Golden Ratio 0.61803398874989 */
 	$golden:	0.6180339887498948482045868343656;
 	
-	$base: 		100%;						// 1000px
-	$gld10:		$base * $golden;			// 600px
+	$base: 		100%;						/* 1000px */
+	$gld10:		$base * $golden;			/* 600px */
 	$gld9:		$base - $gld10;
 	$gld8:		$gld9 * $golden;
 	$gld7:		$gld9 - $gld8;
@@ -32,11 +34,11 @@
 	$gld5:		$gld7 - $gld6;
 	$gld4:		$gld5 * $golden;
 	$gld3:		$gld5 - $gld4;
-	$gld2:		$gld3 * $golden;			// 10-12px
-	$gld1:		$gld3 - $gld2;				// 6-8px
+	$gld2:		$gld3 * $golden;			/* 10-12px */
+	$gld1:		$gld3 - $gld2;				/* 6-8px */
 /* -----------------------------  */
-// Color Scheme
-	$baseColor: 							gray; 	// Base Color for Design
+/* Color Scheme */
+	$baseColor: 							gray; 	/* Base Color for Design */
 	
 	$baseColorLighter:						lighten($baseColor, $gld10);
 	$baseColorLight:						lighten($baseColor, $gld8);
@@ -47,7 +49,7 @@
 /* $group Design Style */	
 
 
-// Other Settings
+/* Other Settings */
 	$sans:	"Myriad Web Pro", "Helvetica Neue", Helvetica, Lucida, Verdana, sans-serif;
 	$serif: "Georgia", Times New Roman, Times, serif;	
 
@@ -55,13 +57,13 @@
 	$font_kerning:							0.06em;
 
 	$drop_shadow: 		 					0.12em 0.19em 0.25em rgba(0,0,0,.25);
-	$box_shadow:							inset 0 0 0.75em darken($baseColor, 35%); // +shadow to button
+	$box_shadow:							inset 0 0 0.75em darken($baseColor, 35%); /* +shadow to button */
 	
 	$border_radius: 						0;
 	$div_line:								medium ridge lighten($baseColor, 10%);
 	
 	$btn_padding: 							0.69em 1em;
-	$navbar_indent: 						1em;						// home btn indent
+	$navbar_indent: 						1em;						/* home btn indent */
 	
 	$nav_lvl_2_width: 						auto;
 	
